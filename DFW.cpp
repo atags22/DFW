@@ -57,7 +57,7 @@ void DFW::update(void)
 	digitalWrite(debuginpin,0);
       lastTime = millis();
       //   Serial.println("B Lock");
-      for (int i = 0; i < 5; i++)  {
+      for (int i = 0; i < 3; i++)  {
         byteBu[i] = inByteB[i];
       }
     }
@@ -78,7 +78,7 @@ void DFW::update(void)
     for (int i = 0; i < 2; i++)  {
       byteBu[i] = 127;
     }
-    for (int i = 0; i < 3; i++)  {
+    for (int i = 0; i <= 4; i++)  {
       byteAn[i] = 90;
     }
   }
